@@ -56,7 +56,7 @@ for record in SeqIO.parse('Figure_1.fasta', "fasta"):
         max_len = len(record)
 
 #creating a surface to draw on
-image = cairo.SVGSurface(str(output)+".svg", (max_len+100), (num_record*200))
+image = cairo.SVGSurface(str(output)+".svg", (max_len+100), (num_record*150))
 #setting context as the output image
 context = cairo.Context(image)
 
